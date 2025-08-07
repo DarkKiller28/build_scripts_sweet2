@@ -29,5 +29,5 @@ crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKill
 
 • ProjectMatrixx A15
 ```
-crave run --clean --no-patch -- "curl -L https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/matrixx_a15.sh | bash"
+crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/matrixx_a15.sh | bash"
 ```
