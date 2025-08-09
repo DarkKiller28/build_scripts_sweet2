@@ -36,3 +36,8 @@ crave run --clean --no-patch -- "curl -L https://raw.githubusercontent.com/DarkK
 ```
 crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/matrixx_a15.sh | bash"
 ```
+
+• Pixelage A15
+```
+crave run --clean --no-patch -- "curl -L https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/pixelage_a15 | bash"
+```
