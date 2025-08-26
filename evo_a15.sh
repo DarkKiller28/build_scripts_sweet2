@@ -26,6 +26,9 @@ export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
+# Delete Error Line
+sed -i '/type lirc_device, dev_type;/d' device/lineage/sepolicy/common/vendor/device.te
+
 # Set up build environment
 source build/envsetup.sh
 echo "============="
