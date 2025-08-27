@@ -1,4 +1,8 @@
 # build_scripts_sweet2
+• AxionAOSP - A15
+```
+crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/axion_a15.sh | bash"
+```
 • SkyLineUI A15
 ```
 crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/skylineui_a15.sh | bash"
