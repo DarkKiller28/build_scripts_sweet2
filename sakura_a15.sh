@@ -30,6 +30,9 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "============="
 
+# Delete Error Line
+sed -i '/type lirc_device, dev_type;/d' device/lineage/sepolicy/common/vendor/device.te
+
 # Lunch
 lunch lineage_sweet2-ap4a-userdebug
 
