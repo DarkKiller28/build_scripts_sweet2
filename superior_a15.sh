@@ -20,11 +20,14 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+# A15 PATH tools fix (use AOSP-prebuilt 'date' instead of host date)
+export PATH="$PWD/prebuilts/build-tools/path/linux-x86:$PATH"
+echo "Using date at: $(command -v date)"
+
 # Export
 export BUILD_USERNAME=DarkKiller 
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
-export BUILD_BROKEN_USES_DATE=true
 echo "======= Export Done ======"
 
 # Delete Error Line
