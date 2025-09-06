@@ -30,13 +30,13 @@ echo "======= Export Done ======"
 # Delete Error Line
 sed -i '/type lirc_device, dev_type;/d' device/lineage/sepolicy/common/vendor/device.te
 
-# Set up build environment
-source build/envsetup.sh
-echo "============="
-
 # PATH tools fix (use AOSP-prebuilt 'date' instead of host date)
 export PATH="$PWD/prebuilts/build-tools/path/linux-x86:$PATH"
 echo "Using date at: $(command -v date)"
+
+# Set up build environment
+source build/envsetup.sh
+echo "============="
 
 # Lunch
 breakfast sweet2
