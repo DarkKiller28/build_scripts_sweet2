@@ -33,5 +33,8 @@ sed -i '/type lirc_device, dev_type;/d' device/lineage/sepolicy/common/vendor/de
 source build/envsetup.sh
 echo "============="
 
+# Lunch 
+lunch lineage_sweet2-bp2a-userdebug
+
 # Build 
 rise b
