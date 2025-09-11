@@ -34,7 +34,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch 
-lunch lineage_sweet2-bp2a-userdebug
+riseup sweet2 userdebug
 
 # Build 
 rise b
