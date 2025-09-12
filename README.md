@@ -23,6 +23,10 @@ crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkK
 ```
 crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/rising_a16.sh | bash"
 ```
+• RisingRevived A15
+```
+crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/rising_a15.sh | bash"
+```
 • ProjectSakura A15
 ```
 crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/sakura_a15.sh | bash"
