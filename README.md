@@ -1,4 +1,8 @@
 # build_scripts_sweet2
+• Alphadroid - A15
+```
+crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/alpha_a15.sh | bash"
+```
 • AxionAOSP - A15
 ```
 crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/axion_a15.sh | bash"
