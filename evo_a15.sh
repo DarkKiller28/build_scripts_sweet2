@@ -20,6 +20,10 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+# Delete unnecessary folders
+rm -rf device/linaro/hikey
+rm -rf device/amlogic/yukawa
+
 # Export
 export BUILD_USERNAME=DarkKiller 
 export BUILD_HOSTNAME=crave
