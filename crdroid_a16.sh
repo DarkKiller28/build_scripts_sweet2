@@ -28,6 +28,7 @@ echo "======= Export Done ======"
 
 # Delete Error Line
 sed -i '/type lirc_device, dev_type;/d' device/lineage/sepolicy/common/vendor/device.te
+sed -i '/lirc_device/d' device/lineage/sepolicy/common/vendor/hal_ir_default.te
 
 # Set up build environment
 source build/envsetup.sh
