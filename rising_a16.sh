@@ -28,9 +28,14 @@ echo "======= Export Done ======"
 
 # Set up build environment
 source build/envsetup.sh
+source build/envsetup.sh
 echo "============="
 
 # Lunch 
+lunch lineage_sweet2-bp2a-userdebug 
+lunch lineage_sweet2-bp2a-userdebug
+
+# Lunch Rising
 riseup sweet2 userdebug
 
 # Build 
