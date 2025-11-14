@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bka-q1 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
