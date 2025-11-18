@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/The-Clover-Project/manifest.git -b 16 --git-lfs
+repo init -u https://github.com/The-Clover-Project/manifest.git -b 16-qpr1 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
