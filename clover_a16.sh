@@ -31,7 +31,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch clover_sweet2-bp2a-userdebug
+lunch clover_sweet2-bp3a-userdebug
 
 # Build
 mka clover -j$(nproc --all)
