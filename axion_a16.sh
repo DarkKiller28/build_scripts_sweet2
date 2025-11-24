@@ -31,7 +31,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-breakfast sweet2 gms pico
+axion sweet2 gms pico
 
 # Build
 mka bacon
