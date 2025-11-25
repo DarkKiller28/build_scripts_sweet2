@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/Evolution-X/manifest -b bka-q1 --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bq1 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -31,7 +31,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch lineage_sweet2-bp2a-userdebug
+lunch lineage_sweet2-bp3a-userdebug
 
 # Build
 m evolution
