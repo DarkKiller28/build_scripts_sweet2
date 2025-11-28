@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/PixelOS-AOSP/manifest.git -b sixteen --git-lfs
+repo init -u https://github.com/PixelOS-AOSP/manifest.git -b sixteen-qpr1 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/DarkKiller28/local_manifest.git .repo/local_manifests -b sweet2-pixelos
+git clone https://github.com/DarkKiller28/local_manifest.git .repo/local_manifests -b sweet2-pixelos16
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
