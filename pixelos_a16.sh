@@ -31,7 +31,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch aosp_sweet2-bp2a-userdebug
+lunch aosp_sweet2-bp3a-userdebug
 
 # Build
 mka bacon
