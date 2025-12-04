@@ -20,6 +20,10 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+echo ">> Cloning custom Soong"
+rm -rf build/soong
+git clone https://github.com/DarkKiller28/android_build_soong build/soong
+
 # Export
 export BUILD_USERNAME=DarkKiller 
 export BUILD_HOSTNAME=crave
