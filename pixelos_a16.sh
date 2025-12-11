@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen --git-lfs
+repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen-qpr1 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
