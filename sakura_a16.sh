@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 15 --git-lfs
+repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 16-qpr0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -30,11 +30,8 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "============="
 
-# Delete Error Line
-sed -i '/type lirc_device, dev_type;/d' device/lineage/sepolicy/common/vendor/device.te
-
 # Lunch
-lunch lineage_sweet2-ap4a-userdebug
+lunch lineage_sweet2-bp2a-userdebug
 
 # Build
 mka bacon
