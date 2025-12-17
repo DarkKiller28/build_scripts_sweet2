@@ -31,7 +31,6 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch aosp_sweet2-bp2a-userdebug
-
+breakfast sweet2
 # Build
-mka bacon
+m pixelos
