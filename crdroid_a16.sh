@@ -30,9 +30,6 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "============="
 
-# Make Clean
-make installclean
-
 # Lunch
 brunch sweet2
 
