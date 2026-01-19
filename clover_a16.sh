@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/The-Clover-Project/manifest.git -b 16-qpr1 --git-lfs
+repo init -u https://github.com/The-Clover-Project/manifest.git -b 16-qpr2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -15,7 +15,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Build Sync
-/opt/crave/resync.sh
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 echo "============="
 echo "Sync success"
 echo "============="
@@ -31,7 +31,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch clover_sweet2-bp3a-userdebug
+lunch clover_sweet2-bp4a-userdebug
 
 # Build
 mka clover -j$(nproc --all)
