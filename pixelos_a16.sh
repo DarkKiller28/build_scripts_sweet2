@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
+rm -rf kernel/xiaomi/sm6150/KernelSU
 
 # repo init rom
 repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen-qpr1 --git-lfs
@@ -14,8 +15,11 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
+# KernelSU
+git clone https://github.com/backslashxx/KernelSU kernel/xiaomi/sm6150/KernelSU
+
 # Build Sync
-/opt/crave/resync.sh 
+repo sync -j$(nproc) --force-sync --optimized-fetch --no-tags --prune
 echo "============="
 echo "Sync success"
 echo "============="
