@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
+rm -rf kernel/xiaomi/sm6150/KernelSU
 
 # repo init rom
 repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --no-clone-bundle
@@ -13,6 +14,9 @@ git clone https://github.com/DarkKiller28/local_manifest.git .repo/local_manifes
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
+
+# KernelSU
+git clone https://github.com/backslashxx/KernelSU kernel/xiaomi/sm6150/KernelSU
 
 # Build Sync
 /opt/crave/resync.sh 
