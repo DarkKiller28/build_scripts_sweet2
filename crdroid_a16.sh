@@ -15,8 +15,6 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# KernelSU
-git clone https://github.com/backslashxx/KernelSU kernel/xiaomi/sm6150/KernelSU
 
 # Build Sync
 /opt/crave/resync.sh 
