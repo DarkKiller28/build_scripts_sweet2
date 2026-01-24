@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/Evolution-X/manifest -b bq1 --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bq2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -15,7 +15,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Build Sync
-/opt/crave/resync.sh 
+ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 echo "============="
 echo "Sync success"
 echo "============="
@@ -31,7 +31,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch lineage_sweet2-bp3a-userdebug
+lunch lineage_sweet2-bp4a-userdebug
 
 # Build
 m evolution
