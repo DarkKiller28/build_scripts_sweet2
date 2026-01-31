@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
-rm -rf kernel/xiaomi/sm6150/KernelSU
+rm -rf prebuilts/clang/host/linux-x86
 
 # repo init rom
 repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --no-clone-bundle
