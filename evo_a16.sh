@@ -8,6 +8,13 @@ echo "=================="
 echo "Repo init success"
 echo "=================="
 
+# Some Commands
+sudo apt install git-lfs
+git lfs install
+echo "=================="
+echo "Lfs install success"
+echo "=================="
+
 # Local manifests
 git clone https://github.com/DarkKiller28/local_manifest.git .repo/local_manifests -b sweet2-evo
 echo "============================"
@@ -15,7 +22,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Build Sync
- repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+/opt/crave/resync.sh
 echo "============="
 echo "Sync success"
 echo "============="
