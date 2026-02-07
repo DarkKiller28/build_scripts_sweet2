@@ -9,6 +9,13 @@ echo "=================="
 echo "Repo init success"
 echo "=================="
 
+# Some Commands
+sudo apt install git-lfs
+git lfs install
+echo "=================="
+echo "Lfs install success"
+echo "=================="
+
 # Local manifests
 git clone https://github.com/DarkKiller28/local_manifest.git .repo/local_manifests -b sweet2-crdroid16
 echo "============================"
