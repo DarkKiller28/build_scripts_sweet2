@@ -23,6 +23,9 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+# Kernel init
+cd kernel/xiaomi/sm6150 && git submodule update --init --recursive && cd .. && cd .. && cd .. 
+
 # Export
 export BUILD_USERNAME=DarkKiller 
 export BUILD_HOSTNAME=crave
