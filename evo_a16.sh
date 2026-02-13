@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
+rm -rf prebuilts/clang/host/linux-x86
 
 # repo init rom
 repo init -u https://github.com/Evolution-X/manifest -b bq2 --git-lfs
@@ -8,12 +9,6 @@ echo "=================="
 echo "Repo init success"
 echo "=================="
 
-# Some Commands
-sudo apt install git-lfs
-git lfs install
-echo "=================="
-echo "Lfs install success"
-echo "=================="
 
 # Local manifests
 git clone https://github.com/DarkKiller28/local_manifest.git .repo/local_manifests -b sweet2-evo
@@ -26,6 +21,9 @@ echo "============================"
 echo "============="
 echo "Sync success"
 echo "============="
+
+# Kernel init
+cd kernel/xiaomi/sm6150 && git submodule update --init --recursive && cd .. && cd .. && cd ..
 
 # Export
 export BUILD_USERNAME=DarkKiller 
