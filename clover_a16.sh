@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
+rm -rf prebuilts/clang/host/linux-x86
 
 # repo init rom
 repo init -u https://github.com/The-Clover-Project/manifest.git -b 16-qpr2 --git-lfs
@@ -19,6 +20,9 @@ repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune 
 echo "============="
 echo "Sync success"
 echo "============="
+
+# Kernel init
+cd kernel/xiaomi/sm6150 && git submodule update --init --recursive && cd .. && cd .. && cd ..
 
 # Export
 export BUILD_USERNAME=DarkKiller 
