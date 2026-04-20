@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-
+repo init --depth=1 -u https://github.com/AfterlifeOS/afterlife_manifest.git -b 16.2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -15,7 +15,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Build Sync
-/opt/crave/resync.sh 
+ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 echo "============="
 echo "Sync success"
 echo "============="
