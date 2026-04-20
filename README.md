@@ -1,4 +1,8 @@
 # build_scripts_sweet2
+• Afterlife - A16
+```
+crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/afterlife_a16.sh | bash"
+```
 • Alphadroid - A15
 ```
 crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/alpha_a15.sh | bash"
