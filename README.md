@@ -65,7 +65,7 @@ crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKill
 
 • EvolutionX A16
 ```
-crave run --clean --no-patch -- "curl -L https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/evo_a16.sh | bash"
+crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/evo_a16.sh | bash"
 ```
 
 • OrionOS A16
