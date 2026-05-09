@@ -1,10 +1,10 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
-rm -rf kernel/xiaomi/sm6150/KernelSU
+rm -rf prebuilts/clang/host/linux-x86
 
 # repo init rom
-repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen-qpr1 --git-lfs
+repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen-qpr2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -15,11 +15,11 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# KernelSU
-git clone https://github.com/backslashxx/KernelSU kernel/xiaomi/sm6150/KernelSU
+# Kernel init
+cd kernel/xiaomi/sm6150 && git submodule update --init --recursive && cd .. && cd .. && cd ..
 
 # Build Sync
-repo sync -j$(nproc) --force-sync --optimized-fetch --no-tags --prune
+/opt/crave/resync.sh
 echo "============="
 echo "Sync success"
 echo "============="
@@ -36,5 +36,6 @@ echo "============="
 
 # Lunch
 breakfast sweet2
+
 # Build
 m pixelos
