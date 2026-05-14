@@ -38,4 +38,4 @@ echo "============="
 lunch clover_sweet2-bp4a-userdebug
 
 # Build
-mka clover -j$(nproc --all)
+mka clover 
