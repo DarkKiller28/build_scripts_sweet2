@@ -15,6 +15,9 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
+# Clover Hardware
+git clone https://github.com/The-Clover-Project/hardware_xiaomi.git -b 16-qpr2 hardware/xiaomi
+
 # Build Sync
 /opt/crave/resync.sh
 echo "============="
