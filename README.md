@@ -21,7 +21,7 @@ crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkK
 ```
 • Clover A16
 ```
-crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/clover_a16.sh | bash"
+crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/clover_a16.sh | bash"
 ```
 • SkyLineUI A15
 ```
