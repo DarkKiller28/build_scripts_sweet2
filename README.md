@@ -1,4 +1,9 @@
 # build_scripts_sweet2
+• AetheriaOS - A16
+```
+crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/aetheria_a16.sh | bash"
+```
+
 • Afterlife - A16
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/afterlife_a16.sh | bash"
