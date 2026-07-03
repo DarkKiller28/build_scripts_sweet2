@@ -14,6 +14,8 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
+# Kernel init
+cd kernel/xiaomi/sm6150 && git submodule update --init --recursive && cd .. && cd .. && cd .. 
 
 # Build Sync
 /opt/crave/resync.sh 
