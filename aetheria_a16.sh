@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/AetheriaOS/aetheria_manifest.git -b aetheria-1.0
+repo init -u https://github.com/AetheriaOS/aetheria_manifest.git -b aetheria-1.0 --depht=1
 echo "=================="
 echo "Repo init success"
 echo "=================="
