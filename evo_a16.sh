@@ -4,7 +4,7 @@ rm -rf .repo/local_manifests/
 rm -rf prebuilts/clang/host/linux-x86
 
 # repo init rom
-repo init -u https://github.com/Evolution-X/manifest -b bq2 --git-lfs --depth=1
+repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs --depth=1
 echo "=================="
 echo "Repo init success"
 echo "=================="
