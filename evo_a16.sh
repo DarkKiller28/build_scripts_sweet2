@@ -1,7 +1,6 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
-rm -rf prebuilts/clang/host/linux-x86
 
 # repo init rom
 repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs --depth=1
