@@ -1,10 +1,9 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
-rm -rf prebuilts/clang/host/linux-x86
 
 # repo init rom
-repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen-qpr2 --git-lfs
+repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen-qpr2 --git-lfs --depth=1
 echo "=================="
 echo "Repo init success"
 echo "=================="
