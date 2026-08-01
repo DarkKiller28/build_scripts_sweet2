@@ -60,7 +60,7 @@ crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKill
 
 • PixelOS A16
 ```
-crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/pixelos_a16 | bash"
+crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/pixelos_a16.sh | bash"
 ```
 
 • PixelOS A15
