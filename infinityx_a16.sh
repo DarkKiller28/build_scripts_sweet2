@@ -1,0 +1,42 @@
+#!/bin/bash
+
+rm -rf .repo/local_manifests/
+
+# repo init rom
+repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault --depth=1
+echo "=================="
+echo "Repo init success"
+echo "=================="
+
+
+# Local manifests
+git clone https://github.com/DarkKiller28/local_manifest.git .repo/local_manifests -b sweet2-infinityx16
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
+
+
+# Build Sync
+/opt/crave/resync.sh 
+echo "============="
+echo "Sync success"
+echo "============="
+
+# Kernel init
+cd kernel/xiaomi/sm6150 && git submodule update --init --recursive && cd .. && cd .. && cd .. 
+
+# Export
+export BUILD_USERNAME=DarkKiller 
+export BUILD_HOSTNAME=crave
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
+echo "======= Export Done ======"
+
+# Set up build environment
+source build/envsetup.sh
+echo "============="
+
+# Lunch
+lunch infinity_sweet2-userdebug
+
+# Build
+mka bacon
