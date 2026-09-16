@@ -3,12 +3,10 @@
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/aetheria_a16.sh | bash"
 ```
-
 • AetheriaOS - A16-Test
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/aetheria_a16-test.sh | bash"
 ```
-
 • Afterlife - A16
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/afterlife_a16.sh | bash"
@@ -45,6 +43,10 @@ crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKill
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/crdroid_a16.sh | bash"
 ```
+• InfinityX A16
+```
+crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/infinityx_a16.sh | bash"
+```
 • RisingRevived A16
 ```
 crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/rising_a16.sh | bash"
@@ -57,42 +59,34 @@ crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkK
 ```
 crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/sakura_a16.sh | bash"
 ```
-
 • PixelOS A16
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/pixelos_a16.sh | bash"
 ```
-
 • PixelOS A15
 ```
 crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/pixelos_a15 | bash"
 ```
-
 • EvolutionX A15
 ```
 crave run --clean --no-patch -- "curl https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/evo_a15.sh | bash"
 ```
-
 • EvolutionX A16
 ```
 crave run --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/evo_a16.sh | bash"
 ```
-
 • OrionOS A16
 ```
 crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/orion_a16.sh | bash"
 ```
-
 • ProjectMatrixx A15
 ```
 crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/matrixx_a15.sh | bash"
 ```
-
 • Pixelage A15
 ```
 crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/pixelage_a15.sh | bash"
 ```
-
 • SuperiorOS A15
 ```
 crave run --clean --no-patch -- "curl -v https://raw.githubusercontent.com/DarkKiller28/build_scripts_sweet2/main/superior_a15.sh | bash"
