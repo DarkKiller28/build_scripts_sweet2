@@ -10,7 +10,7 @@ echo "=================="
 
 
 # Local manifests
-git clone https://github.com/DarkKiller28/local_manifest.git .repo/local_manifests -b sweet2-infinityx16-vanilla
+git clone https://github.com/DarkKiller28/local_manifest.git .repo/local_manifests -b sweet2-infinityx16
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
