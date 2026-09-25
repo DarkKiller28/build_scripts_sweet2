@@ -15,7 +15,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Kernel init and clone KernelSU-Next
-cd kernel/xiaomi/sm6150 && git submodule update --init --recursive && curl -LSs "https://raw.githubusercontent.com/manipvlator/KernelSU/refs/heads/main/kernel/setup.sh" | bash -s main && cd .. && cd .. && cd ..
+cd kernel/xiaomi/sm6150 && curl -LSs "https://raw.githubusercontent.com/manipvlator/KernelSU/refs/heads/main/kernel/setup.sh" | bash -s main && cd .. && cd .. && cd ..
 
 # Build Sync
 /opt/crave/resync.sh
