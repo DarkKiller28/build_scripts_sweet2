@@ -20,7 +20,7 @@ echo "============================"
 
 
 # Build Sync
-repo sync -c -j$(nproc --all) --force-sync --optimized-fetch --no-tags --prune --fail-fast
+/opt/crave/resync.sh
 echo "============="
 echo "Sync success"
 echo "============="
