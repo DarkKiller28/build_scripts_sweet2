@@ -29,7 +29,10 @@ echo "============="
 cd kernel/xiaomi/sm6150 && git submodule update --init --recursive && cd .. && cd .. && cd .. 
 
 # Fetch build/soong
-cd build/soong && git remote add custom https://github.com/DarkKiller28/android_build_soong_crdroid.git && git fetch custom && git reset --hard custom/seventeen && cd ../..
+cd build/soong && git remote add custom https://github.com/DarkKiller28/android_build_soong_crdroid.git && git fetch custom && git reset --hard custom/seventeen
+
+# Tiny Command
+ cd ../..
 
 # Export
 export BUILD_USERNAME=DarkKiller 
